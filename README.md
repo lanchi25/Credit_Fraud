@@ -1,7 +1,7 @@
 # Xây dựng mô hình xác định gian lận giao dịch thẻ tín dụng (Credit Fraud Detection)
 
 
-### I. Giới thiệu
+## I. Giới thiệu
 _**Đặt vấn đề**_:  
 Thẻ tín dụng là một phương thức thanh toán phổ biến được sử dụng rộng rãi, những kẻ tấn công cố gắng đánh cắp thông tin thẻ tín dụng để có thể mua sắm, tiêu xài với chi phí của chủ sở hữu thẻ.  
 Khi chủ sở hữu thẻ tín dụng nhìn thấy các mục trong hóa đơn mua hàng bằng thẻ tín dụng mà họ chưa bao giờ thực hiện, họ yêu cầu hoàn lại tiền, dẫn đến khoản bồi hoàn. Các doanh nghiệp, bao gồm các thương gia, công ty thẻ tín dụng, nhà cung cấp dịch vụ thanh toán và ngân hàng, đang mất hàng tỷ đô la mỗi năm do gian lận thẻ tín dụng. Người tiêu dùng có thể bị ảnh hưởng bởi điểm tín dụng thấp hơn và phí cao hơn.  
@@ -21,7 +21,9 @@ _**Mục tiêu**_:
     + Hiểu được lỗi phát sinh khi sử dụng với tập dữ liệu mất cân bằng  
 
 
-### II. Xây dựng mô hình
+## II. Phân tích
+[Click here and wait a second](https://github.com/lanchi25/Credit_Fraud/blob/main/nguyenthilanchi_predict_fraud.ipynb)
+### 1. Xây dựng mô hình
 1. Đọc dữ liệu  
 2. Thống kê dữ liệu  
 3. Tiền xử lý dữ liệu  
@@ -29,7 +31,7 @@ _**Mục tiêu**_:
 5. Lựa chọn và huấn luyện mô hình phân lớp  
 6. Đánh giá mô hình  
 
-### III. Cải tiến mô hình
+### 2. Cải tiến mô hình
 1. Xây dựng mô hình với phương pháp xử lý mẫu Random UnderSampling kết hợp Cross-Validation đồng thời  
 1.1 Huấn luyện mô hình  
 1.2 Đánh giá mô hình mới  
@@ -41,7 +43,7 @@ _**Mục tiêu**_:
 
 3. So sánh hai phương pháp lấy mẫu  
 
-### IV. Kết luận
+## III. Kết luận
 Việc triển khai trên tập dữ liệu mất cân bằng để xây dựng mô hình theo các quy trình tuần tự thông thường thì dễ gây ra rủi ro mô hình bị quá khớp. Nên cần có các phương pháp lấy mẫu dưới mức hoặc lấy mẫu quá mức để mô hình được xây dựng dự đoán tốt hơn.  
 Trong quá trình lấy mẫu và xác thực để xây dựng và lựa chọn được mô hình tốt thì phải thực hiện đúng cách, đó là hai việc đó phải được thực hiện đồng thời chứ không phải lấy mẫu rồi mới đi xác thực chéo như vậy mô hình sẽ bị overfitting.  
 
@@ -50,7 +52,7 @@ Ngoài ra, trong dữ liệu lấy mẫu dưới mức, mô hình không thể p
 
 Hướng tiếp theo của việc phân tích rút ra từ bài này sẽ là loại bỏ các ngoại lệ trên tập dữ liệu lấy mẫu quá mức và xem liệu độ chính xác trong mô hình thử nghiệm có được cải thiện hay không?
 
-### V. Tài liệu tham khảo
+## IV. Tài liệu tham khảo
 [1] Credit Card Fraud Detection Database, Anonymized credit card transactions labeled as fraudulent or genuine, https://www.kaggle.com/mlg-ulb/creditcardfraud  
 [2] Principal Component Analysis, Wikipedia Page, https://en.wikipedia.org/wiki/Principal_component_analysis  
 [3] ROC-AUC characteristic, https://en.wikipedia.org/wiki/Receiver_operating_characteristic#Area_under_the_curve  
